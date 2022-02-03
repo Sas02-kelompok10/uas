@@ -65,7 +65,7 @@ cd ../templates
 nano app.conf
 ```
 
-![Capture12](https://user-images.githubusercontent.com/93419670/152260406-ee17890f-f9a1-4ee1-8038-eb621534aace.PNG)
+![Capture12](https://user-images.githubusercontent.com/93419670/152276453-aedfa8bd-4cc4-4bfb-beb0-9219b8a751ef.PNG)
 
 
 After all done we go to
@@ -267,8 +267,8 @@ Don't forget to go to handlers
 cd ../handlers
 nano main.yml
 ```
+![Capture53](https://user-images.githubusercontent.com/93419670/152277671-ff32e8bb-3469-4562-9d43-4f7fe4c3100a.PNG)
 
-![02_35_wp_handlers_main_yml](assets/02_35_wp_handlers_main_yml.PNG)
 
 This is the configuration for vm.local
 
@@ -276,11 +276,9 @@ This is the configuration for vm.local
 sudo nano /etc/nginx/sites-available/vm.local
 ```
 
-![02_36_etc_sites_availabe_vmlocal](assets/02_36_etc_sites_availabe_vmlocal.PNG)
+![Capture33](https://user-images.githubusercontent.com/93419670/152277150-e5b77045-a18a-40eb-bc7e-39b8f4f89475.PNG)
 
-![02_37_etc_sites_availabe_vmlocal](assets/02_37_etc_sites_availabe_vmlocal.PNG)
-
-![02_38_etc_sites_availabe_vmlocal](assets/02_38_etc_sites_availabe_vmlocal.PNG)
+![Capture34](https://user-images.githubusercontent.com/93419670/152277163-94b9403d-0a24-4bcd-b164-b70610b9e40d.PNG)
 
 This is the configuration for hosts in VM
 
@@ -288,9 +286,7 @@ This is the configuration for hosts in VM
 nano /etc/hosts
 ```
 
-![02_39_etc_hosts_vm](assets/02_39_etc_hosts_vm.PNG)
-
-![03_1_ansibleplaybook_pma_mariadb](assets/03_1_ansibleplaybook_pma_mariadb.PNG)
+![Capture51](https://user-images.githubusercontent.com/93419670/152276716-c28235be-c88e-4536-97ae-53b14f84b739.PNG)
 
 After we add the ansible, then we run them using
 
@@ -300,30 +296,40 @@ ansible-playbook -i hosts install-''.yml -k
 
 The first one is mariadb
 
-![03_2_ansibleplaybook_pma_mariadb](assets/03_2_ansibleplaybook_pma_mariadb.PNG)
-
-![03_3_ansibleplaybook_pma_mariadb](assets/03_3_ansibleplaybook_pma_mariadb.PNG)
+![Capture41](https://user-images.githubusercontent.com/93419670/152274636-7d41d771-307c-419a-96b3-e0c20ecd2f1c.PNG)
 
 Next is Laravel
 
-![03_4_ansibleplaybook_laravel](assets/03_4_ansibleplaybook_laravel.PNG)
+![Capture40](https://user-images.githubusercontent.com/93419670/152274703-43d5b4c9-e096-4297-b798-0bfc1965d8e6.PNG)
 
-![03_5_ansibleplaybook_laravel](assets/03_5_ansibleplaybook_laravel.PNG)
+![Capture39](https://user-images.githubusercontent.com/93419670/152274724-048d3bc6-b0cc-4059-9d03-566ddd803c25.PNG)
+
 
 The next one is Code Igniter
 
-![03_8_ansibleplaybook_ci](assets/03_8_ansibleplaybook_ci.PNG)
-
-![03_9_ansibleplaybook_ci](assets/03_9_ansibleplaybook_ci.PNG)
+![Capture52](https://user-images.githubusercontent.com/93419670/152276633-bf1b3ebc-944f-4def-b478-6f269f8f03f8.PNG)
 
 And then Wordpress
 
-![03_10_ansibleplaybook_wp](assets/03_10_ansibleplaybook_wp.PNG)
+![Capture38](https://user-images.githubusercontent.com/93419670/152275024-a749119c-a2bc-4943-a3d0-0d99a5ec70a7.PNG)
 
-![03_11_ansibleplaybook_wp](assets/03_11_ansibleplaybook_wp.PNG)
+![Capture37](https://user-images.githubusercontent.com/93419670/152275037-22cdc899-4e62-4c5f-9525-dafd1dd1d38b.PNG)
 
 Then YII2.0
 
-![03_12_ansibleplaybook_yii](assets/03_12_ansibleplaybook_yii.PNG)
+![Capture36](https://user-images.githubusercontent.com/93419670/152274945-44a19f50-ee19-4908-a01b-fa72ada05542.PNG)
 
-![03_13_ansibleplaybook_yii](assets/03_13_ansibleplaybook_yii.PNG)
+![Capture35](https://user-images.githubusercontent.com/93419670/152274963-b7647ff0-c969-475a-a4eb-3c52bb1c8208.PNG)
+
+Hasil
+
+![Screenshot (9)](https://user-images.githubusercontent.com/93419670/152276850-b58874a3-e187-479e-8d1b-1aee1566f38c.png)
+![Screenshot (10)](https://user-images.githubusercontent.com/93419670/152276875-1669127a-d106-46d3-88e6-e849e0fb98c1.png)
+![Screenshot (11)](https://user-images.githubusercontent.com/93419670/152276887-d96cc5ce-0cdd-4f7f-8482-e8892ab13c52.png)
+![Screenshot (12)](https://user-images.githubusercontent.com/93419670/152276894-392b3253-8cf5-4060-a40e-ffa2f3d8595a.png)
+![Screenshot (13)](https://user-images.githubusercontent.com/93419670/152276949-03a5462e-8ee0-47cb-974e-a62b89751f3a.png)
+![Screenshot (14)](https://user-images.githubusercontent.com/93419670/152276962-b00c1aef-ff9d-4821-a910-c2eed4fda8ad.png)
+![Screenshot (15)](https://user-images.githubusercontent.com/93419670/152276968-affaf7f3-085f-4940-b83b-770b99a7da5a.png)
+![Screenshot (16)](https://user-images.githubusercontent.com/93419670/152276976-7e8f89b8-1808-4db5-bda7-d0d23e11109d.png)
+
+
