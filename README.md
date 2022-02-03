@@ -13,11 +13,11 @@ SKEMA :
 
 ------
 
-Make new lxc and configure the IP of each lxc
+membuat  lxc dan konfigurasi IP of setiap
 
 ![Capture1](https://user-images.githubusercontent.com/93419670/152255278-09469dc9-9888-47eb-91ac-17934951a558.PNG)
 
-install open ssh server in all of the lxc above, after that we go to ansible
+install open ssh server dalam semua lxc diatas, lalu masuk ansible
 
 ```
 apt install openssh-server
@@ -29,11 +29,11 @@ Go to
 cd ~/ansible/TUBES
 ```
 
-And then go to 'nano hosts' to classified each lxc just like the scheme above
+masuk ke 'nano hosts' untuk mengklasifikasi setiap lxc
 
 ![Capture2](https://user-images.githubusercontent.com/93419670/152255603-580ac68d-a6f6-4493-b606-34b79006f1d1.PNG)
 
-And then
+lalu
 
 ```
 nano install-ci.yml //for code igniter
@@ -49,7 +49,7 @@ nano install-mariadb.yml //for phpmyadmin
 ![Capture6](https://user-images.githubusercontent.com/93419670/152255635-f7ebe1ba-7d36-4278-ba47-09687edd1bb4.PNG)
 ![Capture7](https://user-images.githubusercontent.com/93419670/152255638-1a8b45ee-a2c8-443f-a47d-318764a6c617.PNG)
 
-After all done we go to
+setelah itu lakukan
 
 ```
 cd /roles/ci/tasks
@@ -58,7 +58,7 @@ nano main.yml
 
 ![Capture11](https://user-images.githubusercontent.com/93419670/152260524-70209b5a-7386-4361-8a34-c4cb0f5eb556.PNG)
 
-After all done we go to
+masuk dalam app.conf
 
 ```
 cd ../templates
@@ -68,7 +68,7 @@ nano app.conf
 ![Capture12](https://user-images.githubusercontent.com/93419670/152276453-aedfa8bd-4cc4-4bfb-beb0-9219b8a751ef.PNG)
 
 
-After all done we go to
+setelah selesai lakukan..
 
 ```
 cd ../handlers
@@ -77,7 +77,7 @@ nano main.yml
 
 ![Capture53](https://user-images.githubusercontent.com/93419670/152278090-464ed572-6bc3-4b84-8362-42bb7708ceeb.PNG)
 
-The ansible for Code Igniter is done, the we go to
+ansible Code Igniter selesai, lalu
 
 ```
 cd ../../
@@ -88,8 +88,6 @@ nano main.yml
 ![Capture20](https://user-images.githubusercontent.com/93419670/152278297-4e25b5b6-a93e-450b-bdb7-19b04b016366.PNG)
 
 
-Then go to
-
 ```
 cd ../handlers
 nano main.yml
@@ -97,7 +95,7 @@ nano main.yml
 
 ![Capture54](https://user-images.githubusercontent.com/93419670/152278470-2811b69f-f287-4d33-83be-03718b71602b.PNG)
 
-The ansible for php is done, next one is Laravel, we need to go to
+ansible php selesai, lanjutkan ke Laravel
 
 ```
 cd ../../
@@ -107,17 +105,12 @@ nano main.yml
 
 ![Capture15](https://user-images.githubusercontent.com/93419670/152278814-84725d21-b51d-428e-b346-1b94a73931b4.PNG)
 
-
-After that we go to
-
 ```
 cd ../templates
 nano env.template
 ```
-
-![02_13_lv_templates_env_template](assets/02_13_lv_templates_env_template.PNG)
-
-![02_14_lv_templates_env_template](assets/02_14_lv_templates_env_template.PNG)
+![Capture16](https://user-images.githubusercontent.com/93419670/152288789-d152a0bb-1391-41a4-af4f-32c1c9e6cb85.PNG)
+![Capture17](https://user-images.githubusercontent.com/93419670/152288799-66ac6163-7760-4fe8-8f15-1853b29c18f5.PNG)
 
 Then go to
 
@@ -125,7 +118,7 @@ Then go to
 nano lv.conf
 ```
 
-![02_15_lv_templates_lv_conf](assets/02_15_lv_templates_lv_conf.PNG)
+![Capture18](https://user-images.githubusercontent.com/93419670/152288974-3b156395-8aa4-41d7-8b5c-cd05e891b743.PNG)
 
 After configuring in templates, we go to handlers
 
@@ -134,7 +127,7 @@ cd ../handlers
 nano main.yml
 ```
 
-![02_16_lv_handlers_main.yml](assets/02_16_lv_handlers_main.yml.PNG)
+![Capture53](https://user-images.githubusercontent.com/93419670/152289122-ceaffffe-1e4f-4592-81a7-af5f22c438fb.PNG)
 
 The ansible for Laravel is done, the next one is mariadb, first we go to
 
@@ -143,8 +136,7 @@ cd ../../../
 cd db/tasks
 nano main.yml
 ```
-
-![02_17_db_tasks_main.yml](assets/02_17_db_tasks_main.yml.PNG)
+![Capture13](https://user-images.githubusercontent.com/93419670/152289301-fc4f5c9e-71de-41af-9d4d-41c145fba184.PNG)
 
 Then go to templates
 
@@ -153,7 +145,7 @@ cd ../templates
 nano my.cnf
 ```
 
-![02_18_db_templates_my_cnf](assets/02_18_db_templates_my_cnf.PNG)
+![Capture14](https://user-images.githubusercontent.com/93419670/152289361-133744d1-81d8-4b43-b0b4-0f9f3872cbeb.PNG)
 
 Next go to handlers
 
@@ -162,7 +154,7 @@ cd ../handlers
 nano main.yml
 ```
 
-![02_19_db_handlers_main_yml](assets/02_19_db_handlers_main_yml.PNG)
+![Capture54](https://user-images.githubusercontent.com/93419670/152289400-4e9755f1-11cf-4bf2-a6ad-d42f0151780c.PNG)
 
 The ansible for database is done, the next one is for PHP My Admin, just like before we need to go to
 
@@ -172,11 +164,8 @@ cd pma/tasks
 nano main.yml
 ```
 
-![02_20_pma_tasks_main_yml](assets/02_20_pma_tasks_main_yml.PNG)
+![Capture21](https://user-images.githubusercontent.com/93419670/152289486-bd0dde16-b0bf-4b35-9119-b23d10bdf497.PNG)
 
-![02_21_pma_tasks_main_yml](assets/02_21_pma_tasks_main_yml.PNG)
-
-![02_23_pma_tasks_main_yml](assets/02_23_pma_tasks_main_yml.PNG)
 
 Then go to
 
@@ -184,8 +173,7 @@ Then go to
 cd ../templates
 nano lxc_mariadb.conf
 ```
-
-![02_24_pma_templates_lxcmariadb_conf](assets/02_24_pma_templates_lxcmariadb_conf.PNG)
+![Capture22](https://user-images.githubusercontent.com/93419670/152289562-52478608-a382-41ef-9a60-78f258c10e29.PNG)
 
 Then go to handlers
 
@@ -194,7 +182,8 @@ cd ../handlers
 nano main.yml
 ```
 
-![02_25_pma_handlers_main_yml](assets/02_25_pma_handlers_main_yml.PNG)
+![image](https://user-images.githubusercontent.com/93419670/152289759-2d885d79-42e2-4c03-997c-9c6be2180540.png)
+
 
 Yay the ansible for PHP My Admin is done, next one is YII2.0
 
@@ -204,11 +193,7 @@ cd yii/tasks
 nano main.yml
 ```
 
-![02_26_yii_tasks_main_yml](assets/02_26_yii_tasks_main_yml.PNG)
-
-![02_27_yii_tasks_main_yml](assets/02_27_yii_tasks_main_yml.PNG)
-
-![02_28_yii_tasks_main_yml](assets/02_28_yii_tasks_main_yml.PNG)
+![Capture25](https://user-images.githubusercontent.com/93419670/152289913-17174975-f795-4ea6-b201-780142be586a.PNG)
 
 The next one we go to templates
 
@@ -217,9 +202,7 @@ cd ../templates
 nano yii.conf
 ```
 
-![02_29_yii_templates_yii_conf](assets/02_29_yii_templates_yii_conf.PNG)
-
-![02_30_yii_templates_yii_conf](assets/02_30_yii_templates_yii_conf.PNG)
+![Capture30](https://user-images.githubusercontent.com/93419670/152290023-80d83670-62ae-45c1-9a7d-3aa242041852.PNG)
 
 Then we go to handlers
 
@@ -228,7 +211,8 @@ cd ../handlers
 nano main.yml
 ```
 
-![02_31_yii_handlers_main_yml](assets/02_31_yii_handlers_main_yml.PNG)
+![image](https://user-images.githubusercontent.com/93419670/152290164-7add95c6-3cd6-4c92-85a8-804adf8e7d4f.png)
+
 
 The ansible for YII2.0 is done, so the next one is Wordpress
 
@@ -238,7 +222,8 @@ cd wp/tasks
 nano main.yml
 ```
 
-![02_32_wp_tasks_main_yml](assets/02_32_wp_tasks_main_yml.PNG)
+![image](https://user-images.githubusercontent.com/93419670/152290339-8937e1e5-c32f-4a29-ad51-2b01387684f8.png)
+
 
 Then go to templates
 
@@ -247,7 +232,8 @@ cd ../templates
 nano wp.conf
 ```
 
-![02_33_wp_templates_wp_conf](assets/02_33_wp_templates_wp_conf.PNG)
+![Capture31](https://user-images.githubusercontent.com/93419670/152290374-55ff1a7e-fb67-43a9-937b-c91e9bdd54ef.PNG)
+
 
 Then
 
@@ -255,7 +241,7 @@ Then
 nano wp.local
 ```
 
-![02_34_wp_templates_wp_local](assets/02_34_wp_templates_wp_local.PNG)
+![Capture27](https://user-images.githubusercontent.com/93419670/152290420-c8f4aa22-6005-4184-9e62-f7bedb3a399b.PNG)
 
 Don't forget to go to handlers
 
