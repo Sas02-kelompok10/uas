@@ -75,7 +75,7 @@ cd ../handlers
 nano main.yml
 ```
 
-![02_6_app_ci_handlers_main_yml](assets/02_6_app_ci_handlers_main_yml.PNG)
+![Capture53](https://user-images.githubusercontent.com/93419670/152278090-464ed572-6bc3-4b84-8362-42bb7708ceeb.PNG)
 
 The ansible for Code Igniter is done, the we go to
 
@@ -85,9 +85,8 @@ cd php/tasks
 nano main.yml
 ```
 
-![02_7_php_tasks_main_yml](assets/02_7_php_tasks_main_yml.PNG)
+![Capture20](https://user-images.githubusercontent.com/93419670/152278297-4e25b5b6-a93e-450b-bdb7-19b04b016366.PNG)
 
-![02_8_php_tasks_main_yml](assets/02_8_php_tasks_main_yml.PNG)
 
 Then go to
 
@@ -96,7 +95,7 @@ cd ../handlers
 nano main.yml
 ```
 
-![02_9_php_handlers_main_yml](assets/02_9_php_handlers_main_yml.PNG)
+![Capture54](https://user-images.githubusercontent.com/93419670/152278470-2811b69f-f287-4d33-83be-03718b71602b.PNG)
 
 The ansible for php is done, next one is Laravel, we need to go to
 
@@ -106,11 +105,8 @@ cd lv/tasks
 nano main.yml
 ```
 
-![02_10_lv_tasks_main_yml](assets/02_10_lv_tasks_main_yml.PNG)
+![Capture15](https://user-images.githubusercontent.com/93419670/152278814-84725d21-b51d-428e-b346-1b94a73931b4.PNG)
 
-![02_11_lv_tasks_main_yml](assets/02_11_lv_tasks_main_yml.PNG)
-
-![02_12_lv_tasks_main_yml](assets/02_12_lv_tasks_main_yml.PNG)
 
 After that we go to
 
